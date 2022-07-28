@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Assignment-1</title>
+  </head>
+  <body>
+    <div class="class1">First Div</div>
+    <div class="class2">Second Div</div>
+    <div class="class3">Third Div</div>
+
+    <div class="classes divs">Fourth Div</div>
+    <div class="classes divs">Five Div</div>
+    <div class="classes divs">Six Div</div>
+
+    <div>
+      <div id="id1">Seventh Div</div>
+      <div>Eighth Div</div>
+    </div>
+    <div>Ninth Div</div>
+    <p>Write Your Experience Here</p>
+
+    <script>
+      let firstElement = (document.querySelector(".class1").innerText =
+        "Prashant");
+
+      let secondElement = document.getElementsByTagName("div")[1];
+
+      secondElement.innerHTML =
+        "<p> My name is Prashant. I love coding. I love Aircampus. </p>";
+
+      let thirdElement = document.getElementsByTagName("div")[2];
+
+      thirdElement.style.backgroundColor = "tomato";
+      thirdElement.style.color = "white";
+
+      let elements4To6 = document.getElementsByClassName("divs");
+
+      for (let i = 0; i < elements4To6.length; i++) {
+        elements4To6[i].style.border = "2px black solid";
+        if (i == 0) {
+          elements4To6[i].innerText = "Fourth";
+        } else if (i == 1) {
+          elements4To6[i].innerText = "Fifth";
+        } else if (i == 2) {
+          elements4To6[i].innerText = "Sixth";
+        }
+      }
+
+      document.getElementById("id1").innerText += " Aircampus";
+
+      document.querySelectorAll("div")[8].innerHTML +=
+        '<div class="new_html"> <p>This is my first assignment</p> </div>';
+
+      document.querySelectorAll("div")[10].innerHTML =
+        "<h1>My Experience with AirCampus </h1>";
+
+      document.querySelectorAll("div")[10].style.font =
+        "italic bold 32px serif";
+      document.querySelectorAll("div")[10].style.color = "tomato";
+      document.getElementsByTagName("p")[2].innerText =
+        "Aircampus follows a unique learning pattern. The process of learning with Aircampus is by exploring and doing. This includes in-class activities such as solving a problem, debating a topic, making a decision or designing a website. These teaching methods tend to be more meaningful and memorable than other conventional teaching methods such as attempts to direct knowledge transfer. That is the reason I love Aircampus.";
+
+      console.log(document.getElementsByTagName("p")[2]);
+    </script>
+  </body>
+</html>
