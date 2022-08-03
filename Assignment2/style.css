@@ -1,0 +1,58 @@
+body {
+    margin: 30px 0 0 12%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    text-align: center;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+
+#nameHeader,
+#emailHeader,
+#phoneHeader,
+#actionHeader {
+    font-family: 'Cinzel', sans-serif;
+    letter-spacing: 2px;
+    color: darkblue;
+}
+
+
+input,
+span,
+button {
+    outline: none;
+    margin: 10px 0 3px 2px;
+    border-radius: 2px;
+}
+
+input {
+    border: 10px solid rgb(71, 180, 177);
+}
+
+#button_add_row {
+    background-color: rgb(71, 180, 177);
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span {
+    background-color: rgb(71, 180, 177);
+    padding: 5px 0 5px 0;
+    color: black;
+
+}
+
+#error1,
+#error2,
+#error3,
+#error4 {
+    background-color: white;
+    color: red;
+    height: 10px;
+}
