@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 50px 0px 0px 50px;
+    box-sizing: border-box;
+}
+
+.display #screen{
+    width: 80%;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: 2px solid black;
+    text-align: right;
+    padding: .6em .5em 0 0;
+    background: #36423d;
+    box-shadow: 4px 4px 10px 5px #2b322f;
+    overflow: auto;
+}
+
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 80%;
+    height: 50vh;
+    background: rgb(223, 202, 199);
+    padding: 10px;
+    border: 1px solid rgb(203, 213, 218);
+    box-shadow: 4px 4px 10px 5px #2b322f;
+}
+
+.container .btns .btn,.btnCE,.btnFact, .btnAC, .btnSin, .btnCos,.btnTan, .btnPow, .btnSqrt,.btnLog,.btnPi, .btnRad, .btnEquals, .btnPercent{
+ border: 2px solid grey;
+ text-align: center;
+ margin: .5px;
+ font-size: 20px;
+ padding-top: 10px;
+}
+
