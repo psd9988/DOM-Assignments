@@ -6,7 +6,7 @@ body {
 
 .display #screen {
     font-weight: bolder;
-    font-family: Lexend Exa;
+    font-family: Lexend Exa, sans-serif, Arial, Helvetica;
     color: rgb(223, 202, 199);
     width: 80%;
     height: 70px;
@@ -24,7 +24,7 @@ body {
 
 .btns {
     cursor: default;
-    font-family: Lexend Exa;
+    font-family: Lexend Exa, sans-serif, Arial, Helvetica;
     font-weight: normal;
     font-size: 23px;
     letter-spacing: 2px;
