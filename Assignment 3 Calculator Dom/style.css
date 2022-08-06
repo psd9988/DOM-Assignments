@@ -1,10 +1,13 @@
-body{
+body {
     padding: 0;
     margin: 50px 0px 0px 50px;
     box-sizing: border-box;
 }
 
-.display #screen{
+.display #screen {
+    font-weight: bolder;
+    font-family: Lexend Exa;
+    color: rgb(223, 202, 199);
     width: 80%;
     height: 70px;
     font-size: 35px;
@@ -15,10 +18,16 @@ body{
     background: #36423d;
     box-shadow: 4px 4px 10px 5px #2b322f;
     overflow: auto;
+
 }
 
 
-.btns{
+.btns {
+    cursor: default;
+    font-family: Lexend Exa;
+    font-weight: normal;
+    font-size: 23px;
+    letter-spacing: 2px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     width: 80%;
@@ -29,11 +38,40 @@ body{
     box-shadow: 4px 4px 10px 5px #2b322f;
 }
 
-.container .btns .btn,.btnCE,.btnFact, .btnAC, .btnSin, .btnCos,.btnTan, .btnPow, .btnSqrt,.btnLog,.btnPi, .btnRad, .btnEquals, .btnPercent{
- border: 2px solid grey;
- text-align: center;
- margin: .5px;
- font-size: 20px;
- padding-top: 10px;
+.container .btns .btn:active,
+.btnCE:active,
+.btnFact:active,
+.btnAC:active,
+.btnSin:active,
+.btnCos:active,
+.btnTan:active,
+.btnPow:active,
+.btnSqrt:active,
+.btnLog:active,
+.btnPi:active,
+.btnRad:active,
+.btnEquals:active,
+.btnPercent:active {
+    background-color: rgb(114, 73, 73);
+
 }
 
+.container .btns .btn,
+.btnCE,
+.btnFact,
+.btnAC,
+.btnSin,
+.btnCos,
+.btnTan,
+.btnPow,
+.btnSqrt,
+.btnLog,
+.btnPi,
+.btnRad,
+.btnEquals,
+.btnPercent {
+    border: 2px solid grey;
+    text-align: center;
+    margin: .5px;
+    padding-top: 10px;
+}
