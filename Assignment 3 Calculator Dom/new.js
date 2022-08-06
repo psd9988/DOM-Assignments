@@ -1,6 +1,7 @@
 let screen = document.getElementById('screen')
 let buttonsList = document.querySelectorAll('.btn')
 
+
 for (let i = 0; i < buttonsList.length; i++) {
     buttonsList[i].addEventListener('click', () => {
         if (buttonsList[i].innerText == 'x') {
@@ -99,9 +100,10 @@ newEquals.addEventListener('click', ()=>{
 let newPercent = document.getElementById('percent')
 
 newPercent.addEventListener('click', ()=>{
-  screen.value = screen.value.toString()
-  console.log(screen.value);
+  Array.from(screen.value)
+  screen.value = (screen.value.split('*')[0]) * (screen.value.split('*')[1])/100;
 })
+
 
 
 
