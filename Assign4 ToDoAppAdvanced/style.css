@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', sans-serif, Arial, Helvetica;
+    letter-spacing: 1px;
+    background: linear-gradient(to bottom, #85a0ba 0%, #1b2bb3 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heading,
+.addButton {
+    text-align: center;
+    color: rgb(120, 2, 120);
+}
+
+hr {
+    border: .5px solid black;
+
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    min-height: 250px;
+}
+
+.inside_container {
+    color: rgb(54, 40, 40);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(99, 217, 105);
+}
+
+.addButtonContainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 5px;
+    border-radius: 5px;
+}
+
+.myDiv {
+    color: blue;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: .2fr 3fr .2fr .2fr;
+    margin-bottom: 10px;
+    column-gap: 10px;
+}
