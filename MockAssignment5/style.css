@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #b06161 0%, #02cea5 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header,
+nav,.navItems
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header,
+nav {
+    padding: 10px 50px;
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+
+nav,
+.taskButton {
+    border-radius: 30px;
+
+}
+
+nav,
+.item1,
+.item6 {
+    background-color: rgb(202, 193, 193);
+}
+
+nav {
+    width: 50%;
+    height: 30px;
+}
+
+.taskButton,
+.navItems {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.navItems {
+    margin-left: 10px;
+    width: 12%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.taskButton {
+    color: white;
+    background-color: goldenrod;
+    width: 15%;
+    padding: 1% 1%;
+
+}
+
+/* Navbar Items from Item 1 to 6 =============================================== */
+
+.color {
+    width: 40%;
+    height: 60%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.item1 {
+    font-weight: bold;
+}
+
+.item2,
+.color1,
+.red {
+    background-color: red;
+}
+
+.item3,
+.color2,
+.yellow {
+    background-color: yellow;
+}
+
+.item4,
+.color3,
+.blue {
+    background-color: blue;
+}
+
+.item5,
+.color4,
+.black {
+    background-color: black;
+}
+
+.item6 {
+    color: white;
+}
+
+/* Navbar items end above ------------------------------------------ */
+.inputPlusButton {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.taskInput {
+    width: 100%;
+    display: flex;
+    background-color: tomato;
+    outline: none;
+    border: none;
+    caret-color: white;
+    color: white;
+    padding: 30px 0 0 15px;
+    font-size: 100%;
+}
+
+
+::placeholder {
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.doneButton {
+    color: white;
+    font-weight: bolder;
+    background-color: blueviolet;
+    border-radius: 25px;
+    border: none;
+    min-height: 30px;
+    min-width: 70px;
+    cursor: pointer;
+}
+
+.another {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    width: 100vh;
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.colorItemsContainer {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(54, 54, 54);
+}
+
+.blurItems {
+    filter: blur(8px);
+}
+
+.toDoContainer {
+    position: relative;
+    margin: 50px 0 0 50px;
+    background-color: lightblue;
+    height: 30vh;
+    width: 220px;
+}
+
+.red, .yellow, .blue, .black{
+    height: 20px;
+
+}
+
+.checkIcon {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: green;
+}
+
+
+.fa-trash-can {
+    position: absolute;
+    left: 40px;
+    bottom: 10px;
+    color: red;
+}
+
+.fa-pencil {
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+    color: blueviolet;
+}
+
+.fa-square {
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+    color: red;
+}
+
+.fa-lock {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.borderWhite{
+    border: 3px solid white;
+}
+
+.fa-xmark{
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.fa-xmark:hover{
+    color: darkorchid;
+
+}
