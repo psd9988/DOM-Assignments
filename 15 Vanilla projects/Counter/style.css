@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+    background: linear-gradient(to right, #8ba0ad, #25c1dd);
+
+}
+
+.container{
+    grid-template-areas: 'counter counter counter' 'digits digits digits' 'decrease reset increase';
+}
+
+.counterHeading{
+    grid-area: counter;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(1, 80, 217);
+}
+
+.digits{
+    grid-area: digits;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+button{
+    font-size: 1.5em;
+    width: 20%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: darkorchid;
+    color: white;
+}
+
+.decrease{
+    grid-area: decrease;
+}
+
+.reset{
+    grid-area: reset;
+    margin: 0 0 0 1em;
+}
+
+.increase{
+    grid-area: increase;
+    margin: 0 0 0 1em;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
