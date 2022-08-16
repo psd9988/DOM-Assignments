@@ -2,18 +2,14 @@ let taskButton = document.querySelector('.taskButton');
 let header = document.querySelector('header');
 let buttons1 = document.querySelectorAll('.navItems');
 let allButton = document.querySelector('.item1');
-let red = document.querySelector('.item2');
-let yellow = document.querySelector('.item3');
-let blue = document.querySelector('.item4');
-let black = document.querySelector('.item5');
-let myTick = document.querySelector('.item6');
+let allContainer = document.createElement('div');
+let item2 = document.querySelector('.item2');
+let item3 = document.querySelector('.item3');
+let item4 = document.querySelector('.item4');
+let item5 = document.querySelector('.item5');
+let item6 = document.querySelector('.item6');
 
-let allButtonContainer = document.createElement('div');
-let redContainer = document.createElement('div');
-let yellowContainer = document.createElement('div');
-let blueContainer = document.createElement('div');
-let blackContainer = document.createElement('div');
-let myTickContainer = document.createElement('div');
+
 
 let taskItem = `<div class= "another"> 
 <div class= "inputPlusButton">
@@ -86,6 +82,7 @@ taskButton.addEventListener('click', function myFunc() {
             }
         }
         buttons2[i].addEventListener('click', () => {
+
             myClicked2.classList.remove('borderWhite');
             buttons2[i].classList.add('borderWhite');
             myClicked2 = buttons2[i];
@@ -94,27 +91,38 @@ taskButton.addEventListener('click', function myFunc() {
             doneButton.style.backgroundColor = colorCss;
 
 
+
+
+
         })
     }
 
+    let inputText = document.querySelector('.taskInput').value;
+
     doneButton.addEventListener('click', () => {
-        let inputText = document.querySelector('.taskInput').value;
+        document.body.classList.remove('blurItems');
+        document.querySelector('.another').remove();
+
         if (inputText.length > 0) {
-            document.body.insertAdjacentHTML('afterend', myToDo);
-            document.querySelector('toDoitem').innerText = inputText;
-            document.body.classList.remove('blurItems');
-            document.querySelector('.another').remove();
-            allButtonContainer.insertAdjacentHTML('beforeend', myToDo);
-            document.body.insertAdjacentHTML(allButtonContainer);
+            document.body.innerHTML += allContainer;
+            allContainer.insertAdjacentElement('beforeend', myToDo);
+            console.log(allContainer);
+            document.querySelector('.toDoitem').innerText = inputText;
+            document.querySelector('.colorStrip').style.backgroundColor = doneButton.style.backgroundColor;
+
+
+
         }
+
+
+
+
     })
+
 
 });
 
-allButton.addEventListener('click',()=>{
 
-    document.body.insertAdjacentHTML('afterend', myToDo);
-})
 
 
 

@@ -78,26 +78,25 @@ nav {
 }
 
 .item2,
-.color1,
-.red {
+.color1 {
     background-color: red;
 }
 
 .item3,
-.color2,
-.yellow {
+.color2
+ {
     background-color: yellow;
 }
 
 .item4,
-.color3,
-.blue {
+.color3
+ {
     background-color: blue;
 }
 
 .item5,
-.color4,
-.black {
+.color4
+ {
     background-color: black;
 }
 
@@ -181,10 +180,6 @@ nav {
     width: 220px;
 }
 
-.red, .yellow, .blue, .black{
-    height: 20px;
-
-}
 
 .checkIcon {
     position: absolute;
