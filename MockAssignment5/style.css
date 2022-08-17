@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    font-family: 'DynaPuff', cursive;
 }
 
 header,
@@ -27,6 +28,8 @@ nav {
 nav,
 .taskButton {
     border-radius: 30px;
+    font-family: 'DynaPuff', cursive;
+
 
 }
 
@@ -57,7 +60,7 @@ nav {
 
 .taskButton {
     color: white;
-    background-color: goldenrod;
+    background-color: tomato;
     width: 15%;
     padding: 1% 1%;
 
@@ -157,6 +160,7 @@ nav {
     background-color: tomato;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    z-index: 1;
 
 }
 
@@ -216,6 +220,12 @@ nav {
     bottom: 10px;
 }
 
+.fa-lock-open {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
 .borderWhite{
     border: 3px solid white;
 }
@@ -229,4 +239,22 @@ nav {
 .fa-xmark:hover{
     color: darkorchid;
 
+}
+
+.colorStrip{
+    height: 10%;
+    margin: 0 0 10% 0;
+}
+
+.toDoitem{
+    padding: 0 0 0 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.displayNone{
+    display: none;
+}
+
+.displayBlock{
+    display: block;
 }
