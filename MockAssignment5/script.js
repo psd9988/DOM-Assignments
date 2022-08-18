@@ -95,7 +95,7 @@ taskButton.addEventListener('click', function myFunc() {
             // TO DO LIST CONTAINER
             let toDoContainer = document.createElement('div');
             toDoContainer.classList.add('toDoContainer');
-            document.body.appendChild(toDoContainer);
+            document.body.append(toDoContainer);
 
             // COLOR STRIP
             let colorStrip = document.createElement('div');
