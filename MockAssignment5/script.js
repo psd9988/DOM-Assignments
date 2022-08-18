@@ -162,7 +162,7 @@ taskButton.addEventListener('click', function myFunc() {
             toDoContainer.appendChild(squareIcon);
 
             squareIcon.addEventListener('click', () => {
-                let myColors = ['red', 'yellow', 'blue', 'black'];
+                let myColors = ['rgb(255, 0, 0)', 'rgb(255, 255, 0)', 'rgb(0, 0, 255)', 'rgb(0, 0, 0)'];
                 if (colorStrip.style.backgroundColor == myColors[myColors.length - 1]) {
                     colorStrip.style.backgroundColor = myColors[0];
                 } else {
