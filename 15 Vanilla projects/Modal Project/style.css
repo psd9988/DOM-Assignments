@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 60vh;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.modalText {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.modalbtn {
+    padding: 5px 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.modalbtn:hover {
+    background-color: white;
+    color: lightblue;
+    border: solid lightblue 2px;
+}
+
+.myColorDim {
+    position: absolute;
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+
+.modalContent {
+    background-color: white;
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+.fa-xmark {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: maroon;
+    transition: .8s;
+}
+
+.fa-xmark:hover {
+    font-size: 40px;
+    color: rgb(156, 92, 92);
+}
