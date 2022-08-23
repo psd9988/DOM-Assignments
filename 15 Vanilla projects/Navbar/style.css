@@ -1,0 +1,40 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 20px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 2% 0 2% 0;
+    box-shadow: 4px 4px 20px;
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10% 0 0;
+}
+
+.leftSideText{
+    margin: 0 0 0 10px;
+    font-size: 25px;
+}
+
+i{
+    margin: 0 0 0 10px;
+    color: rgb(72, 72, 241);
+    cursor: pointer;
+}
+
+.addictText{
+    color: rgb(124, 124, 241);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(174, 134, 83);
+}

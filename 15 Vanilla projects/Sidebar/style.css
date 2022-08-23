@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(203, 225, 232);
+}
+
+.sidebar{
+  padding: 20px 0 0 0;
+  background-color: black;
+  box-shadow: 4px 4px 20px ;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  transition: var(--transition);
+  transform: translate(-100%);
+}
+
+.fa-xmark{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 50px;
+  color: maroon;
+}
+
+.codingText, .addictText{
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: black;
+  text-shadow: 4px 10px 35px;  
+}
+
+.codingText{
+  color: lightcoral;
+  margin: 0 0 0 30px;
+}
+
+.addictText{
+  color: lightblue;
+}
+
+nav{
+  margin: 10% 0 0 0;
+}
+
+nav div{
+height: 50px;
+font-size: 20px;
+padding: 10px 0 10px 30px;
+}
+
+nav div:hover{
+  background-color: lightgreen;
+}
+
+a{
+  text-decoration: none;
+  color: green;
+}
+
+
+.iconsContainer{
+  margin: 10% 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.barsIcon{
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  font-size: 50px;
+}
+
+.showSidebar{
+  transform: translate(0);
+}
