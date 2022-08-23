@@ -15,7 +15,7 @@ body{
   left: 0;
   bottom: 0;
   width: 40%;
-  transition: var(--transition);
+  transition: 1s;
   transform: translate(-100%);
 }
 
@@ -51,6 +51,7 @@ nav div{
 height: 50px;
 font-size: 20px;
 padding: 10px 0 10px 30px;
+transition: .3s;
 }
 
 nav div:hover{
