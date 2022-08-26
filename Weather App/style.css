@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+body{
+    background: linear-gradient(rgb(27, 53, 50), rgb(74, 45, 17)) fixed no-repeat;
+    color: white;
+    font-family: 'DynaPuff', cursive;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+}
+
+h1{
+    text-align: center;
+}
+
+.inputContainer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0 0 0 ;
+    flex-direction: column;
+}
+
+.city{
+    width: 15rem;
+    height: 2rem;
+    margin: 0 0 2% 0 ;
+    background-color: antiquewhite;
+    outline: none;
+    border-radius: 2rem;
+    border: none;
+}
+
+.resultContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0 0 0 ;
+}
+
