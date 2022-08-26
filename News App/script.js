@@ -30,5 +30,5 @@
               
                 
             }
-        }).catch(err=>alert("incorrect keyword entered to search for news. Please re-type a correct search to get the latest news"))
+        }).catch(err=>alert("incorrect input. Please type correct english!"))
     })
