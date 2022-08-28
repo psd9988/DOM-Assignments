@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(212, 206, 206);
+    font-family: 'DynaPuff', cursive;
+}
+
+.headingContainer {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.headingText,
+.subHeadingText,
+.inputText,
+.submitBtn {
+    margin: 0 0 100px 0;
+}
+
+.headingText {
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.submitBtn {
+    margin: 0 0 0 1rem;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: black;
+    outline: none;
+    border: white;
+    color: white;
+}
+
+.inputText {
+    width: 30%;
+    height: 3rem;
+    background-color: grey;
+    color: white;
+    outline: none;
+    border: white;
+    font-size: 1.2rem;
+    padding: .5rem;
+
+}
+
+.inputText::placeholder {
+    color: white;
+    font-size: 1rem;
+}
+
+.mainContainer {
+
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+img {
+    text-align: center;
+    width: 50%;
+    height: 30rem;
+    border: 5px solid tomato;
+    margin: 100px 0 10px 0;
+}
+
+.showName {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+}
+
+.startDate,
+.language {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: rgb(90, 48, 48);
+}
+
+.readMore {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(104, 104, 197);
+    cursor: pointer;
+}
+
+.summary {
+    margin: 10px;
+}
