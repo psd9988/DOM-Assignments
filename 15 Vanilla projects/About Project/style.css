@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: linear-gradient(rgb(50, 82, 169), rgb(121, 130, 214));
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 2px;
+}
+
+.aboutText{
+    font-weight: bolder;
+    font-size: 52px;
+    letter-spacing: 5px;
+}
+
+.subText{
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.headingContainer{
+    color: white;
+    text-align: center;
+    margin: 5% 0;
+}
+
+img{
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+    margin:  0 20px;
+    border: solid 5px white;
+}
+
+.textHeadings{
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text{
+    font-size: 22px;
+    width: 100%;
+    padding: 20px;
+}
+
+.history, .vision, .goals{
+    background-color: rgb(210, 205, 205);
+    transition: .5s;
+}
+
+
+.history:hover{
+    background-color: lightblue;
+    color: red;
+}
+
+.vision:hover{
+    background-color: lightcoral;
+    color: red;
+
+}
+
+.goals:hover{
+    background-color: antiquewhite;
+    color: red;
+}
+
+.imageAndTextContainer{
+    display: flex;
+
+}
+
+.textContainer{
+    width: 500px;
+    background-color: white;
+}
+
+.paras{
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 20px 0 0 0 ;
+}
+
+.paraHistory, .paraVision, .paraGoals{
+    padding: 20px;
+    color: rgb(147, 90, 20);
+    
+}
+
+.historyText, .visionText, .goalsText{
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin: 0 0 10px 0;
+    color: black;
+}
+
+.greyBackground{
+    background-color: rgb(125, 122, 122);
+}
+.whiteBackground{
+    background-color: white;
+}
+
+.displayNone{
+    display: none;
+}
+
