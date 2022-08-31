@@ -1,0 +1,54 @@
+body{
+    margin: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.container{
+    width: 70%;
+    border: solid tomato 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-10deg);
+    transition: 1s;
+}
+
+.container:hover{
+    transform: rotate(-10deg) scale(1.5);
+ 
+}
+
+.textAndImageContainer{
+    background-color: blue;
+}
+
+.textBox2{
+    color: lightblue;
+    height: 100px;
+    width: 100%;
+    background-color: red;
+
+}
+
+img{
+    border: white 10px solid;
+    width: 20%;
+    margin: 0px 50px 0 0;
+}
+
+.heading{
+    text-align: center;
+}
+
+.another{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
