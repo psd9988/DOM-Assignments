@@ -1,0 +1,1 @@
+<img src="outputMyntra.png" alt="Image">

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer{
+    position: relative;
+    text-align: center;
+    width: 50%;
+    min-height: 250px;
+    border-radius: 5px;
+    margin: 100px 0 0 0;
+    background: linear-gradient(145deg, #ffffff, white);
+    box-shadow:  12px 12px 64px #c5bebe,
+                 -32px -32px 64px #ffffff;
+}
+
+.alertText{
+    color: maroon;
+    background-color: rgb(229, 188, 188); 
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.headingText{
+    margin: 70px 0 0 0;
+}
+
+#groceryItemsInput{
+    width: 70%;
+    height: 25px;
+    background-color: lightblue;
+}
+
+.submit{
+    height: 30px;
+    padding: 0 12px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.submit{
+    height: 30px;
+    padding: 0 12px;
+    background-color: lightblue;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(15, 184, 240);
+    color: white;
+}
+
+.groceryItemsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.fa-pen-to-square{
+    color: lightgreen;
+}
+
+.fa-trash, .clearItemsBtn{
+    color: rgb(225, 31, 31);
+    cursor: pointer;
+}
+
